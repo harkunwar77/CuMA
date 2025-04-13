@@ -1,0 +1,63 @@
+.widgetSmTitle {
+  margin-bottom:1.5rem!important;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.widgetSmImg {
+  width: 40px;
+}
+
+.widgetSmList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.widgetSmListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.widgetSmUser {
+  text-transform: capitalize;
+  text-align: left;
+  align-items:align-middle;
+}
+
+.widgetSmButton {
+  /* width: 82px; */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  text-transform: capitalize;
+  /* background-color: #eeeef7;
+  color: #555; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.widgetSmButton:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.widgetSmIcon {
+  font-size: 16px !important;
+  margin-right: 5px;
+}
+
+/* widgetSm.module.css */
+
+.scrollableContainer {
+  height: fit-content;
+
+  max-height: 300px; /* Set your desired max height for the container */
+  overflow-y: auto;
+}

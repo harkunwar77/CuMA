@@ -1,0 +1,67 @@
+.productAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: rgb(225, 201, 19);
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.4s ease-in-out;
+}
+
+.productAddButton:hover {
+  background-color: #2182ea;
+  color: white;
+}
+
+.productInfoImg {
+  width: 50px;
+  height: auto;
+
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.productName {
+  font-weight: 600;
+}
+
+.productInfoValue {
+  font-weight: 300;
+}
+
+.productUploadImg {
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.productFormRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.productUpload {
+  display: flex;
+  align-items: center;
+}
+
+.productButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(238, 205, 38);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.productButton:hover {
+  background-color: rgb(54, 184, 42);
+  color: white;
+}

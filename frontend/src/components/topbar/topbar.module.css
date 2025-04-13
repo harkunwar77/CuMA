@@ -1,0 +1,92 @@
+/* topbar.module.css */
+
+.topbar {
+  height: 50px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarWrapper {
+  padding: 10px 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  max-width: 100%;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #2f4d98 !important;
+  margin-right: 20px;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+}
+
+.topbarIconContainer {
+  position: relative;
+  cursor: pointer;
+  margin-left: 15px;
+  color: #555;
+}
+
+.sidebarIcon {
+  margin-right: 10px;
+  color: #2f4d98;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+.logOut,
+.profile {
+  margin-left: 0.5rem;
+  color: #2f4d98;
+}
+
+.topAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .topLeft {
+    margin-right: auto;
+  }
+
+  .logo {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .topbarWrapper {
+    padding: 10px;
+  }
+
+  .sidebarIcon {
+    position: absolute;
+    left: 10px;
+    color: #2f4d98;
+  }
+
+  .logo {
+    margin-left: 35px;
+  }
+}

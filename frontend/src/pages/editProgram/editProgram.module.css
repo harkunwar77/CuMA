@@ -1,0 +1,94 @@
+.user {
+  flex: 4;
+  padding: 20px;
+}
+
+.userTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userTitle {
+  text-transform: capitalize;
+}
+.userAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-transform: capitalize;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+}
+
+.userAddButton:hover {
+  background-color: #00bcd4;
+  color: #555;
+}
+
+.userTopShow {
+  display: flex;
+  align-items: center;
+}
+
+.userShowImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userShowTopTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.userShowjob {
+  font-weight: 300;
+}
+
+.userShowBottom {
+  margin-top: 20px;
+}
+
+.userShowTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(50, 50, 50);
+  text-transform: capitalize;
+}
+
+.usershowInfo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  color: #444;
+}
+
+.userShowIcon {
+  font-size: 16px !important;
+}
+
+.userShowInfoTitle {
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.userUpdateUpload {
+  text-align: right;
+}
+
+.userUpdateImg {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.userUpdateIcon {
+  cursor: pointer;
+}

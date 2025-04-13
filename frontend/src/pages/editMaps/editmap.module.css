@@ -1,0 +1,119 @@
+/* General Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-xs-12,
+.col-sm-12,
+.col-md-8,
+.col-lg-8,
+.col-md-4,
+.col-lg-4,
+.col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Spacing & Alignment */
+.mt-4,
+.mt-3 {
+    margin-top: 1.5rem;
+    /* Adjust the value based on your spacing scale */
+}
+
+/* Typography */
+h3,
+h4 {
+    font-size: 1.25rem;
+    /* Consider your typography scale */
+    margin-bottom: .75rem;
+    font-weight: 500;
+    /* Adjust based on your design */
+    line-height: 1.2;
+}
+
+/* Form & Inputs */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    /* Adjust padding to match your design */
+    font-size: 1rem;
+    /* Match your typography scale */
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    /* Your input text color */
+    background-color: #fff;
+    /* Input background color */
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    /* Input border color */
+    border-radius: .25rem;
+    /* Adjust based on your design system */
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    /* Focus border color */
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+/* Buttons */
+.button,
+.button.primary {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    /* Adjust based on your button text color */
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #007bff;
+    /* Primary button background color */
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: #0056b3;
+    /* Darker shade for hover state */
+    border-color: #004085;
+}
+
+/* Utility classes for icons inside buttons */
+.GetApp {
+    /* Adjust the size and margin if you're using icons inside buttons */
+    vertical-align: middle;
+    margin-left: .5rem;
+}
+
+/* Customizing Card */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+    padding: 1rem;
+    /* Adjust padding to your needs */
+}

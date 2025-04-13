@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://www.uwindsor.ca/studentexperience/sites/uwindsor.ca.studentexperience/files/1_35.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo img {
+  height: 100px;
+  mix-blend-mode: color-burn;
+}
+.login-box {
+  background-color: rgba(0, 85, 149, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 380px;
+  height: 287px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #005595;
+}
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-box input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-box button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eba71e;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.login-box .alert {
+  padding: 8px;
+  color: #7e1b19;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/* .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #58585b;
+  width: 100%;
+  height: 100px;
+} */
+
+.soicon {
+  background-color: #58585b;
+  color: #eba71e;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.icon-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-list li {
+  margin: 0 0.5rem;
+}
+
+.soicon a {
+  color: #eba71e;
+}
+
+.soicon p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.alert {
+
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 480px) {
+  .login-box {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .login-box form {
+    margin-top: 10px;
+  }
+  
+  .login-box input,
+  .login-box button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-box {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+  }
+}

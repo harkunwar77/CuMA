@@ -1,0 +1,20 @@
+.label {
+  padding: 0.5rem 0.5rem !important;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0 !important;
+}
+
+.label.success {
+  color: #3bb077;
+  background: #e5faf2;
+}
+
+.label.warning {
+  background-color: #f9f0de;
+  color: #eba71e;
+}
+
+.label.danger {
+  background-color: #f8d7da;
+  color: #df4759;
+}

@@ -1,0 +1,119 @@
+.tab-maps {
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.table tbody td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.alert {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Green {
+  background-color: green;
+  color: white;
+}
+
+.Yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.Red {
+  background-color: red;
+  color: white;
+}
+
+
+
+
+.plo-table-container {
+  background-color: #fde3e3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.plo-table-container2 {
+  background-color: #dee2e6;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+}  
+.plo-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.plo-table th,
+.plo-table td {
+  border: none;
+  text-align: left;
+  padding: 3 px;
+}
+.button {
+  width: 10%;
+  font: inherit;
+  padding: 0.5rem 1.5rem !important;
+  border: 1px solid #2f4d98;
+  color: #fff;
+  background-color:#2f4d98 ;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+.plo-table th {
+  font-weight: bold;
+}
+
+.plo-table td.description-cell {
+  background-color: #fde3e3;
+  padding: 5px;
+}
+
+ 
+

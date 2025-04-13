@@ -1,0 +1,14 @@
+.widgetLgTitle {
+  margin-bottom:1.5rem!important;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.widgetLgTh {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.widgetLgImg {
+  width: 40px;
+}
