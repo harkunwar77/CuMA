@@ -1,0 +1,103 @@
+To restore the DB do following seteps in command line
+
+psql -U postgres -d cuma -f cuma.sql
+
+To backup
+
+pg_dump -U postgres -d cuma -f cuma.sql
+
+########################################################
+# Dump each table in a separate file
+pg_dump -U postgres -d cuma -t project -f project.sql
+pg_dump -U postgres -d cuma -t course -f course.sql
+pg_dump -U postgres -d cuma -t faculty -f faculty.sql
+pg_dump -U postgres -d cuma -t learning_outcomes -f learning_outcomes.sql
+pg_dump -U postgres -d cuma -t learning_outcome_levels -f learning_outcome_levels.sql
+pg_dump -U postgres -d cuma -t learning_outcome_level_suffix -f learning_outcome_level_suffix.sql
+pg_dump -U postgres -d cuma -t login_uwin -f login_uwin.sql
+pg_dump -U postgres -d cuma -t program -f program.sql
+pg_dump -U postgres -d cuma -t project_permissions -f project_permissions.sql
+pg_dump -U postgres -d cuma -t uga_alignments -f uga_alignments.sql
+pg_dump -U postgres -d cuma -t program_course_outcome_xref -f program_course_outcome_xref.sql
+pg_dump -U postgres -d cuma -t project_program_course_outcome_xref -f project_program_course_outcome_xref.sql
+
+########################################################
+# Restore each table from separate files
+psql -U postgres -d cuma -f project.sql
+psql -U postgres -d cuma -f course.sql
+psql -U postgres -d cuma -f faculty.sql
+psql -U postgres -d cuma -f learning_outcomes.sql
+psql -U postgres -d cuma -f learning_outcome_levels.sql
+psql -U postgres -d cuma -f learning_outcome_level_suffix.sql
+psql -U postgres -d cuma -f login_uwin.sql
+psql -U postgres -d cuma -f program.sql
+psql -U postgres -d cuma -f project_permissions.sql
+psql -U postgres -d cuma -f uga_alignments.sql
+
+##########################################################################################
+############ work in progress ############################################################
+##########################################################################################
+#!/bin/bash
+
+# Function to restore a table from a SQL dump file
+restore_table() {
+    table_name=$1
+    sql_file=$2
+    psql -U postgres -d cuma -f "$sql_file"
+    if [ $? -eq 0 ]; then
+        echo "Restored $table_name successfully"
+    else
+        echo "Failed to restore $table_name"
+    fi
+}
+
+# Restore each table
+restore_table "project" "project.sql"
+restore_table "course" "course.sql"
+restore_table "faculty" "faculty.sql"
+restore_table "learning_outcomes" "learning_outcomes.sql"
+restore_table "learning_outcome_levels" "learning_outcome_levels.sql"
+restore_table "learning_outcome_level_suffix" "learning_outcome_level_suffix.sql"
+restore_table "login_uwin" "login_uwin.sql"
+restore_table "program" "program.sql"
+restore_table "project_permissions" "project_permissions.sql"
+restore_table "uga_alignments" "uga_alignments.sql"
+
+
+#############################################################
+project:
+these are created to add/update/delete any program/course
+
+program:
+what you doing like mac, msc
+
+course:
+are your subjects 
+
+learning outcomes:
+https://www.uwindsor.ca/qualityassurance/796/what-are-learning-outcomes
+
+these are the set of standards or points a student gain by completing the course or a program  
+learning_outcome (table name)
+
+so this learning outcomes are assigned to each and every course and program 
+(not clear alignments assigned to program are inherite to courses or vise versa or they has individual
+ defenitions) moving on...
+PLO (program learning outcomes)
+these are at the program level
+every program has to satisfy a certain amount of PLO approved by Senate
+To achieve this every PLO will be assigned one or more learning outcomes
+for ex PLO 1 will be assigned to A learning outcome
+
+so courses and program have learning outcomes to satisfy the PLO
+(I heard there is a formula to calculate this I have no idea) moving on...
+
+each learning_outcome has different levels
+    introduction I
+    reinforcement R
+    Mastery M
+
+each learning_outcome_level has flags
+    Assessments indicated I
+    High-impact assessements indicated H
+    
